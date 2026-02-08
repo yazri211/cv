@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about" id="home">About</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div style="display: flex; align-items: center; gap: 20px;">
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <section class="about" id="about">
+    <div class="home-content">
+      <h3>Hi, I'm</h3>
+      <h1 class="animate-name">Yazri Khoiri</h1>
+      <p>And I'm a <span class="text-type"></span></p>
+      <p>I have a strong interest in developing end-to-end web systems and applications as a Full Stack Developer, with the ability to design, develop, and maintain efficient, scalable, and user-friendly applications.</p>
+
+      <div class="social-media">
+        <a href="https://github.com/yazri211"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/6281292822666"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/yazri_khoiri?igsh=am14eHpneTB2eHpq"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yazri-khoiri-matondang-ba6a5331a?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="assets/profil.jpeg" alt="">
+    </div>
+  </section>
+
+
+  <section class="skills" id="skills">
+    <h2 class="heading">Tools & <span>Technologies</span></h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <i class="fab fa-html5"></i>
+        <div class="skill-info">
+          <h3>HTML</h3>
+          <p>Language</p>
+        </div>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-css3-alt"></i>
+        <div class="skill-info">
+          <h3>CSS</h3>
+          <p>Language</p>
+        </div>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-js"></i>
+        <div class="skill-info">
+          <h3>Javascript</h3>
+          <p>Language</p>
+        </div>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-python"></i>
+        <div class="skill-info">
+          <h3>Python</h3>
+          <p>Language</p>
+        </div>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-cuttlefish"></i>
+        <div class="skill-info">
+          <h3>C</h3>
+          <p>Language</p>
+        </div>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-bootstrap"></i>
+        <div class="skill-info">
+          <h3>Bootstrap</h3>
+          <p>Framework</p>
+        </div>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-github"></i>
+        <div class="skill-info">
+          <h3>Github</h3>
+          <p>Repository</p>
+        </div>
+      </div>
+      <div class="skill-box">
+        <i class="fab fa-figma"></i>
+        <div class="skill-info">
+          <h3>Figma</h3>
+          <p>Design Tool</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="heading">Selected <span>Projects</span></h2>
+    <div class="projects-container">
+
+      <div class="project-col">
+        <div class="project-box large">
+          <img src="assets/Screenshot 2026-02-08 165637.png" alt="Project 1">
+          <div class="project-layer">
+            <h4>Portfolio Website</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-col">
+        <div class="project-box small">
+          <img src="assets/coffe.png" alt="Project 2">
+          <div class="project-layer">
+            <h4>Coffeshop Website</h4>
+          </div>
+        </div>
+        <div class="project-box small">
+          <img src="assets/readify.png" alt="Project 3">
+          <div class="project-layer">
+            <h4>Library Website</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-col">
+        <div class="project-box large">
+          <img src="assets/beauty shop.png" alt="Project 4">
+          <div class="project-layer">
+            <h4>E-commerce Website</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="text" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2026 by Yazri Khoiri | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
